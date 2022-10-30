@@ -206,7 +206,7 @@ void CadView::OnDraw(CDC* pDC)
 	CBitmap bitmap;
 	CRect m_rcClient;
 	GetClientRect(m_rcClient);
-	CBrush a=CBrush(RGB(33,33,33));
+	CBrush a(RGB(33,33,33));
 	if (!pDC->IsPrinting())
 	{
 		if (dcMemory.CreateCompatibleDC(pDC))

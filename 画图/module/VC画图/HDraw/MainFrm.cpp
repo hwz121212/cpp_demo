@@ -5,6 +5,10 @@
 #include "HDraw.h"
 
 #include "MainFrm.h"
+#include <Windows.h>
+#include <WinUser.h>
+
+#define GCL_HICON           (-14)
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -24,7 +28,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_PICS, OnUpdateViewPics)
 	ON_COMMAND(ID_VIEW_COLOR, OnViewColor)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_COLOR, OnUpdateViewColor)
-	ON_WM_TIMER()
+	//ON_WM_TIMER()
 	//}}AFX_MSG_MAP
 	ON_MESSAGE(WM_USER_ACTIVE, OnOtherViewActive)
 END_MESSAGE_MAP()

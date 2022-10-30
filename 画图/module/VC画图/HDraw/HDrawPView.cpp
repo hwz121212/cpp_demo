@@ -11,6 +11,9 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+#include <Winuser.h>
+
+#define GCL_HBRBACKGROUND   (-10)
 /////////////////////////////////////////////////////////////////////////////
 // CHDrawPView
 
@@ -106,7 +109,7 @@ int CHDrawPView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_drawView->SetDocument((CHDrawDoc*)m_pDocument);
 	m_drawView->ShowWindow(SW_NORMAL);
 	m_drawView->UpdateWindow();
-	SetClassLong(m_hWnd,GCL_HBRBACKGROUND,(long)GetStockObject(GRAY_BRUSH));
+	SetClassLong(m_hWnd, GCL_HBRBACKGROUND, (long)GetStockObject(GRAY_BRUSH));
 
 	return 0;
 }
