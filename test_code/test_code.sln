@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use100", "demo\Use100\Use10
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UseMemory100", "demo\UseMemory100\UseMemory100\UseMemory100\UseMemory100.vcxproj", "{C9EBF747-6AB7-4F31-8E87-06E995F5817C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telnet", "demo\telnet_src\src\Telnet.vcxproj", "{395C34B2-367D-4BE3-AC76-3765FF30D2F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,10 @@ Global
 		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Debug|x64.Build.0 = Debug|x64
 		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Release|x64.ActiveCfg = Release|x64
 		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Release|x64.Build.0 = Release|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Debug|x64.ActiveCfg = Debug|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Debug|x64.Build.0 = Debug|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Release|x64.ActiveCfg = Release|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
 		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
 		{C9EBF747-6AB7-4F31-8E87-06E995F5817C} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
