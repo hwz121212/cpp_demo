@@ -3,9 +3,54 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{07E2F30C-E300-4391-A59D-5DE5FBF80592}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeGenerateTool", "demo\CodeGenerateTool\CodeGenerateTool\CodeGenerateTool.vcxproj", "{406F79C2-F164-4FDA-AEEA-28205CEB6AC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonitorDemo", "demo\MonitorDemo\MonitorDemo\MonitorDemo.vcxproj", "{74980ED3-0E05-4062-89F6-8DAA92F60837}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointLineDistance", "demo\PointLineDistance\PointLineDistance\PointLineDistance\PointLineDistance.vcxproj", "{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use100", "demo\Use100\Use100\Use100\Use100.vcxproj", "{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UseMemory100", "demo\UseMemory100\UseMemory100\UseMemory100\UseMemory100.vcxproj", "{C9EBF747-6AB7-4F31-8E87-06E995F5817C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{406F79C2-F164-4FDA-AEEA-28205CEB6AC6}.Debug|x64.ActiveCfg = Debug|x64
+		{406F79C2-F164-4FDA-AEEA-28205CEB6AC6}.Debug|x64.Build.0 = Debug|x64
+		{406F79C2-F164-4FDA-AEEA-28205CEB6AC6}.Release|x64.ActiveCfg = Release|x64
+		{406F79C2-F164-4FDA-AEEA-28205CEB6AC6}.Release|x64.Build.0 = Release|x64
+		{74980ED3-0E05-4062-89F6-8DAA92F60837}.Debug|x64.ActiveCfg = Debug|x64
+		{74980ED3-0E05-4062-89F6-8DAA92F60837}.Debug|x64.Build.0 = Debug|x64
+		{74980ED3-0E05-4062-89F6-8DAA92F60837}.Release|x64.ActiveCfg = Release|x64
+		{74980ED3-0E05-4062-89F6-8DAA92F60837}.Release|x64.Build.0 = Release|x64
+		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A}.Debug|x64.ActiveCfg = Debug|x64
+		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A}.Debug|x64.Build.0 = Debug|x64
+		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A}.Release|x64.ActiveCfg = Release|x64
+		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A}.Release|x64.Build.0 = Release|x64
+		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706}.Debug|x64.ActiveCfg = Debug|x64
+		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706}.Debug|x64.Build.0 = Debug|x64
+		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706}.Release|x64.ActiveCfg = Release|x64
+		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706}.Release|x64.Build.0 = Release|x64
+		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Debug|x64.ActiveCfg = Debug|x64
+		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Debug|x64.Build.0 = Debug|x64
+		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Release|x64.ActiveCfg = Release|x64
+		{C9EBF747-6AB7-4F31-8E87-06E995F5817C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{406F79C2-F164-4FDA-AEEA-28205CEB6AC6} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
+		{74980ED3-0E05-4062-89F6-8DAA92F60837} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
+		{68CCFFA1-997D-4C49-85B7-1B84D7E64E5A} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
+		{8BA43AC9-C78B-4C4C-9D8C-31B4AAC9F706} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
+		{C9EBF747-6AB7-4F31-8E87-06E995F5817C} = {07E2F30C-E300-4391-A59D-5DE5FBF80592}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
