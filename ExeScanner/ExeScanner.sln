@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_module", "1_module", "{411ACC61-884D-48F0-81FF-BB15873DF86C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExeScanner", "module\ExeScanner\ExeScanner.vcxproj", "{6DECE392-31F2-42EC-ACE5-C52238FC7AE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exeinfo", "module\exeinfo\exeinfo.vcxproj", "{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6}.Debug|x64.ActiveCfg = Debug|x64
+		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6}.Debug|x64.Build.0 = Debug|x64
+		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6}.Release|x64.ActiveCfg = Release|x64
+		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6}.Release|x64.Build.0 = Release|x64
+		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Debug|x64.ActiveCfg = Debug|x64
+		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Debug|x64.Build.0 = Debug|x64
+		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Release|x64.ActiveCfg = Release|x64
+		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6} = {411ACC61-884D-48F0-81FF-BB15873DF86C}
+		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD} = {411ACC61-884D-48F0-81FF-BB15873DF86C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal

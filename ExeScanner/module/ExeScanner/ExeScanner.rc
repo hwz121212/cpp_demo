@@ -1,0 +1,482 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ExeScanner.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ExeScanner.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&PE"
+    BEGIN
+        MENUITEM "&Scan PE\tCtrl+O",            ID_FILE_SCANPE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&Import\tCtrl+I",             ID_ACTION_IMPORT
+        MENUITEM "&Export\tCtrl+E",             ID_ACTION_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties\tAlt+Enter",      ID_ACTION_PROPERTIES
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Dos/Win Header",             ID_TOOLS_DOS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   ID_HELP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About ExeScanner...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "E",            ID_ACTION_EXPORT,       VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_ACTION_IMPORT,       VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_ACTION_PROPERTIES,   VIRTKEY, ALT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_SCANPE,         VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP_HELP,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ExeScanner"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "ExeScanner Version 1.0",IDC_STATIC,41,17,119,8,SS_NOPREFIX
+    LTEXT           "Shakti Intellectual Solutions",IDC_STATIC,41,27,119,8
+    DEFPUSHBUTTON   "I Agree",IDOK,170,18,50,16,WS_GROUP
+    GROUPBOX        "About ExeScanner",IDC_STATIC,7,7,221,90
+    GROUPBOX        "ExeScanner can scan Humans too...",IDC_STATIC,7,99,221,123
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,17,20,20
+    EDITTEXT        IDC_EDIT1,14,42,207,49,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "Name: Vishalsinh Jhala",IDC_STATIC,99,114,73,8
+    LTEXT           "Email: VishalJhala@yahoo.com",IDC_STATIC,99,146,98,8
+    LTEXT           "Web: http://www20.brinkster.com/zala",IDC_STATIC,99,157,127,8
+    CONTROL         "",IDC_STATIC_PHOTO,"Static",SS_OWNERDRAW | WS_BORDER,12,109,83,109
+    LTEXT           "Base: India",IDC_STATIC,99,124,37,8
+    LTEXT           "Function: Works for IBM",IDC_STATIC,99,135,78,8
+    LTEXT           "",IDC_STATIC_SCANSTATUS,101,206,114,11
+END
+
+IDD_IMAGE_IMPORT DIALOGEX 0, 0, 226, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Resource"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,59,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,121,50,14
+    GROUPBOX        "Source File",IDC_STATIC,7,7,103,111
+    LTEXT           "File:",IDC_STATIC,13,19,16,9
+    LTEXT           "",IDC_SRC_FILE,32,19,61,9
+    LTEXT           "Width:",IDC_STATIC,13,34,24,9
+    LTEXT           "Height:",IDC_STATIC,13,47,24,9
+    LTEXT           "Bits Per Pixel:",IDC_STATIC,13,60,46,9
+    LTEXT           "Size:",IDC_STATIC,13,73,24,9
+    LTEXT           "",IDC_SRC_WIDTH,69,34,24,9
+    LTEXT           "",IDC_SRC_HEIGHT,69,47,24,9
+    LTEXT           "",IDC_SRC_BPP,69,60,24,9
+    LTEXT           "",IDC_SRC_SIZE,69,73,35,9
+    GROUPBOX        "Destination Resource",IDC_STATIC,116,7,103,111
+    LTEXT           "File:",IDC_STATIC,122,20,16,9
+    LTEXT           "",IDC_DEST_FILE,140,20,61,9
+    LTEXT           "Width:",IDC_STATIC,122,34,24,9
+    LTEXT           "Height:",IDC_STATIC,122,47,24,9
+    LTEXT           "Bits Per Pixel:",IDC_STATIC,122,61,46,9
+    LTEXT           "Size:",IDC_STATIC,122,74,24,9
+    LTEXT           "",IDC_DEST_WIDTH,178,34,24,9
+    LTEXT           "",IDC_DEST_HEIGHT,178,47,24,9
+    LTEXT           "",IDC_DEST_BPP,178,61,24,9
+    LTEXT           "",IDC_DEST_SIZE,178,74,35,9
+    PUSHBUTTON      "Preview",IDC_BUTTON_PREVIEW_1,33,96,50,14
+    PUSHBUTTON      "Preview",IDC_BUTTON_PREVIEW_2,142,95,50,14
+END
+
+IDD_DIALOG_BINARYEDIT DIALOGEX 0, 0, 130, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify Value"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Change Hex Value",IDC_STATIC,6,4,118,51,BS_CENTER | BS_FLAT
+    EDITTEXT        IDC_EDIT_HEX,52,17,24,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,11,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,34,50,14
+END
+
+IDD_DIALOG_MODIFY_STRING DIALOGEX 0, 0, 206, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify String"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,143,16,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,33,50,14
+    EDITTEXT        IDC_EDIT_STR,14,17,124,76,ES_MULTILINE | ES_AUTOVSCROLL
+    GROUPBOX        "String",IDC_STATIC,7,7,192,93,BS_FLAT
+    PUSHBUTTON      "Insert ""\\n""",IDOK2,144,78,50,14
+END
+
+IDD_DIALOG_PEHEADER DIALOGEX 0, 0, 219, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dos - Windows Header"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Magic number",IDC_BUTTON1,10,27,50,14,BS_FLAT
+    PUSHBUTTON      "Last page Bytes",IDC_BUTTON2,59,27,50,14,BS_FLAT
+    PUSHBUTTON      "Pages in file",IDC_BUTTON3,108,27,50,14,BS_FLAT
+    PUSHBUTTON      "Relocations",IDC_BUTTON4,157,27,50,14,BS_FLAT
+    PUSHBUTTON      "cparhdr",IDC_BUTTON5,10,40,50,14,BS_FLAT
+    PUSHBUTTON      "minalloc",IDC_BUTTON6,59,40,50,14,BS_FLAT
+    PUSHBUTTON      "maxalloc",IDC_BUTTON7,108,40,50,14,BS_FLAT
+    PUSHBUTTON      "SS value",IDC_BUTTON8,157,40,50,14,BS_FLAT
+    PUSHBUTTON      "SP value",IDC_BUTTON9,10,53,50,14,BS_FLAT
+    PUSHBUTTON      "Checksum",IDC_BUTTON10,59,53,50,14,BS_FLAT
+    PUSHBUTTON      "IP value",IDC_BUTTON11,108,53,50,14,BS_FLAT
+    PUSHBUTTON      "CS value",IDC_BUTTON12,157,53,50,14,BS_FLAT
+    PUSHBUTTON      "relocation table",IDC_BUTTON13,10,66,50,14,BS_FLAT
+    PUSHBUTTON      "Overlay No",IDC_BUTTON14,59,66,50,14,BS_FLAT
+    PUSHBUTTON      "Reserved (4)",IDC_BUTTON15,108,66,50,14,BS_FLAT
+    PUSHBUTTON      "OEM identifier",IDC_BUTTON16,157,66,50,14,BS_FLAT
+    PUSHBUTTON      "OEM info",IDC_BUTTON17,10,79,50,14,BS_FLAT
+    PUSHBUTTON      "Reserved(10)",IDC_BUTTON18,59,79,50,14,BS_FLAT
+    PUSHBUTTON      "Address of new exe header",IDC_BUTTON19,108,79,99,14,BS_FLAT
+    LTEXT           "|<                                      8 Bytes                                       >|",IDC_STATIC,11,4,195,10
+    GROUPBOX        "Dos Header",IDC_STATIC,4,17,209,81,BS_CENTER | BS_FLAT
+    PUSHBUTTON      "Signature",IDC_BUTTON20,10,111,99,14,BS_FLAT
+    PUSHBUTTON      "Machine",IDC_BUTTON22,108,111,50,14,BS_FLAT
+    PUSHBUTTON      "Sections#",IDC_BUTTON23,157,111,50,14,BS_FLAT
+    PUSHBUTTON      "Time Stamp",IDC_BUTTON24,10,124,99,14,BS_FLAT
+    PUSHBUTTON      "Pointer To Symbol Table",IDC_BUTTON27,108,124,99,14,BS_FLAT
+    PUSHBUTTON      "Symbols#",IDC_BUTTON28,10,137,99,14,BS_FLAT
+    PUSHBUTTON      "Size-Opt Hdr",IDC_BUTTON30,108,137,50,14,BS_FLAT
+    PUSHBUTTON      "Characteristics",IDC_BUTTON31,157,137,50,14,BS_FLAT
+    PUSHBUTTON      "Magic",IDC_BUTTON32,10,149,50,14,BS_FLAT
+    PUSHBUTTON      "MjrLnkVer",IDC_BUTTON33,59,149,26,14,BS_FLAT
+    PUSHBUTTON      "MnrLnkVer",IDC_BUTTON34,83,149,26,14,BS_FLAT
+    PUSHBUTTON      "Size Of Code",IDC_BUTTON35,108,149,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Initialized Data",IDC_BUTTON36,10,162,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Uninitialized Data",IDC_BUTTON38,108,162,99,14,BS_FLAT
+    GROUPBOX        "Win Header",IDC_STATIC,4,99,209,214,BS_CENTER | BS_FLAT
+    PUSHBUTTON      "Address Of Entry Point",IDC_BUTTON25,10,175,99,14,BS_FLAT
+    PUSHBUTTON      "Base Of Code",IDC_BUTTON29,108,175,99,14,BS_FLAT
+    PUSHBUTTON      "Base Of Data",IDC_BUTTON26,10,188,99,14,BS_FLAT
+    PUSHBUTTON      "Image Base",IDC_BUTTON39,108,188,99,14,BS_FLAT
+    PUSHBUTTON      "Section Alignment",IDC_BUTTON40,10,202,99,14,BS_FLAT
+    PUSHBUTTON      "File Alignment",IDC_BUTTON41,108,202,99,14,BS_FLAT
+    PUSHBUTTON      "Mjr OS Ver",IDC_BUTTON21,10,215,50,14,BS_FLAT
+    PUSHBUTTON      "Mnr OS Ver",IDC_BUTTON44,59,215,50,14,BS_FLAT
+    PUSHBUTTON      "Mjr Img Ver",IDC_BUTTON45,108,215,50,14,BS_FLAT
+    PUSHBUTTON      "Mnr Img Ver",IDC_BUTTON46,157,215,50,14,BS_FLAT
+    PUSHBUTTON      "Mjr SS Ver",IDC_BUTTON47,10,228,50,14,BS_FLAT
+    PUSHBUTTON      "Mnr SS Ver",IDC_BUTTON48,59,228,50,14,BS_FLAT
+    PUSHBUTTON      "Win32 Version Value",IDC_BUTTON49,108,228,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Image",IDC_BUTTON50,10,241,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Headers",IDC_BUTTON51,108,241,99,14,BS_FLAT
+    PUSHBUTTON      "CheckSum",IDC_BUTTON52,10,254,99,14,BS_FLAT
+    PUSHBUTTON      "Subsystem",IDC_BUTTON53,108,254,50,14,BS_FLAT
+    PUSHBUTTON      "Dll Chars",IDC_BUTTON54,157,254,50,14,BS_FLAT
+    PUSHBUTTON      "Size Of Stack Reserve",IDC_BUTTON55,10,267,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Stack Commit",IDC_BUTTON56,108,267,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Heap Reserve",IDC_BUTTON57,10,280,99,14,BS_FLAT
+    PUSHBUTTON      "Size Of Heap Commit",IDC_BUTTON58,108,280,99,14,BS_FLAT
+    PUSHBUTTON      "Loader Flags",IDC_BUTTON59,10,293,99,14,BS_FLAT
+    PUSHBUTTON      "Number Of Rva And Sizes",IDC_BUTTON60,108,293,99,14,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Shakti Intellectual Solutions"
+            VALUE "FileDescription", "ExeScanner. Dealer of all kinds of Portable Executable."
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ExeScanner.exe"
+            VALUE "LegalCopyright", "(c) Shakti Intellectual Solutions.  All rights reserved."
+            VALUE "OriginalFilename", "ExeScanner.exe"
+            VALUE "ProductName", "ExeScanner"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_IMAGE_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DIALOG_BINARYEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_MODIFY_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DIALOG_PEHEADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_RIGHT        BITMAP                  "Buttons1.bmp"
+
+IDB_BITMAP_LEFT         BITMAP                  "Buttons2.bmp"
+
+IDB_BITMAP_RESOURCE_LIST BITMAP                  "ImageList16.bmp"
+
+IDB_BITMAP_POINTER      BITMAP                  "Pointer.bmp"
+
+IDB_BITMAP_VISHAL       BITMAP                  "res\\Vishal-small.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ExeScanner"
+    IDS_STRING_SCANPE       "Open and Scan New Portable Executable File"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ExeScanner"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ExeScanner.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

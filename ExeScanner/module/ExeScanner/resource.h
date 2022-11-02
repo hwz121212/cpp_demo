@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ 生成的包含文件。
+// 供 ExeScanner.rc 使用
+//
+#define IDOK2                           3
+#define IDD_ABOUTBOX                    100
+#define IDP_OLE_INIT_FAILED             100
+#define IDR_MAINFRAME                   128
+#define IDR_ExeScannerTYPE              129
+#define IDS_STRING_SCANPE               129
+#define ID_FILE_SCANPE                  130
+#define IDB_BITMAP_RIGHT                140
+#define IDB_BITMAP2                     141
+#define IDB_BITMAP_LEFT                 141
+#define IDD_IMAGE_IMPORT                142
+#define IDB_BITMAP_RESOURCE_LIST        143
+#define IDB_BITMAP_POINTER              145
+#define IDD_DIALOG_BINARYEDIT           146
+#define IDD_DIALOG_MODIFY_STRING        147
+#define IDB_BITMAP1                     148
+#define ID_ACTION_IMPORT                149
+#define ID_ACTION_EXPORT                150
+#define ID_ACTION_PROPERTIES            151
+#define IDB_BITMAP_VISHAL               153
+#define ID_HELP_HELP                    154
+#define IDD_DIALOG1                     155
+#define IDD_DIALOG_PEHEADER             155
+#define ID_TOOLS_DOS                    156
+#define IDC_LIST_PROPERTY               1000
+#define IDC_EDIT_HEX                    1000
+#define IDC_SRC_FILE                    1001
+#define IDC_EDIT_STR                    1001
+#define IDC_DEST_FILE                   1002
+#define IDC_EDIT1                       1002
+#define IDC_SRC_WIDTH                   1003
+#define IDC_STATIC_PHOTO                1003
+#define IDC_DEST_WIDTH                  1004
+#define IDC_STATIC_SCANSTATUS           1004
+#define IDC_SRC_HEIGHT                  1005
+#define IDC_DEST_HEIGHT                 1006
+#define IDC_SRC_BPP                     1007
+#define IDC_DEST_BPP                    1008
+#define IDC_SRC_SIZE                    1009
+#define IDC_DEST_SIZE                   1010
+#define IDC_SRC_IMAGE                   1011
+#define IDC_BUTTON_PREVIEW_1            1011
+#define IDC_DEST_IMAGE                  1012
+#define IDC_BUTTON_PREVIEW_2            1012
+#define IDC_BUTTON1                     1012
+#define IDC_BUTTON2                     1013
+#define IDC_BUTTON3                     1014
+#define IDC_BUTTON4                     1015
+#define IDC_BUTTON5                     1016
+#define IDC_BUTTON6                     1017
+#define IDC_BUTTON7                     1018
+#define IDC_BUTTON8                     1019
+#define IDC_BUTTON9                     1020
+#define IDC_BUTTON10                    1021
+#define IDC_BUTTON11                    1022
+#define IDC_BUTTON12                    1023
+#define IDC_BUTTON13                    1024
+#define IDC_BUTTON14                    1025
+#define IDC_BUTTON15                    1026
+#define IDC_BUTTON16                    1027
+#define IDC_BUTTON17                    1028
+#define IDC_BUTTON18                    1029
+#define IDC_BUTTON19                    1030
+#define IDC_BUTTON20                    1031
+#define IDC_BUTTON22                    1033
+#define IDC_BUTTON23                    1034
+#define IDC_BUTTON24                    1035
+#define IDC_BUTTON27                    1038
+#define IDC_BUTTON28                    1039
+#define IDC_BUTTON30                    1041
+#define IDC_BUTTON31                    1042
+#define IDC_BUTTON32                    1043
+#define IDC_BUTTON33                    1044
+#define IDC_BUTTON34                    1045
+#define IDC_BUTTON35                    1046
+#define IDC_BUTTON36                    1047
+#define IDC_BUTTON37                    1048
+#define IDC_BUTTON38                    1049
+#define IDC_BUTTON25                    1050
+#define IDC_BUTTON29                    1051
+#define IDC_BUTTON26                    1052
+#define IDC_BUTTON39                    1053
+#define IDC_BUTTON40                    1054
+#define IDC_BUTTON41                    1055
+#define IDC_BUTTON42                    1056
+#define IDC_BUTTON43                    1057
+#define IDC_BUTTON21                    1058
+#define IDC_BUTTON44                    1059
+#define IDC_BUTTON45                    1060
+#define IDC_BUTTON46                    1061
+#define IDC_BUTTON47                    1062
+#define IDC_BUTTON48                    1063
+#define IDC_BUTTON49                    1064
+#define IDC_BUTTON50                    1065
+#define IDC_BUTTON51                    1066
+#define IDC_BUTTON52                    1067
+#define IDC_BUTTON53                    1068
+#define IDC_BUTTON54                    1069
+#define IDC_BUTTON55                    1076
+#define IDC_BUTTON56                    1077
+#define IDC_BUTTON57                    1078
+#define IDC_BUTTON58                    1079
+#define IDC_BUTTON59                    1080
+#define IDC_BUTTON60                    1081
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        157
+#define _APS_NEXT_COMMAND_VALUE         32779
+#define _APS_NEXT_CONTROL_VALUE         1013
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif
