@@ -1,0 +1,17 @@
+GetWindowRect(hWnd, &rect);
+hWnd是桌面窗口句柄，rect就是你要的矩形 
+ 
+用这几句获取桌面所有窗口句柄：
+ HWND hWnd = ::GetDesktopWindow(); 
+ hWnd = ::GetWindow(hWnd, GW_CHILD); 
+  while（hWnd ）{
+ hWnd = ::GetWindow(hWnd, GW_HWNDNEXT); 
+}
+ 
+用这几句得到鼠标所在窗口句柄：
+ GetCursorPos(&ptMouse);
+  hWnd = ::WindowFromPoint(ptMouse);
+  while(::GetParent(hWnd) != DeskHwnd && hWnd != DeskHwnd && ::GetParent(hWnd) !=NULL)
+  {
+   hWnd = ::GetParent(hWnd);
+  }

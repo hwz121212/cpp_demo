@@ -1,0 +1,129 @@
+绘制任意线条：
+1、创建基于单文档工程：Draw
+CDrawView类中添加成员变量：
+CPoint m_ptOrigin;
+BOOL m_bDraw;
+
+2、CDrawView()中初始化：
+m_ptOrigin = point;
+m_bDraw = false;
+
+3、添加消息响应函数：
+WM_LBUTTONDOWN    WM_LBUTTONUP  WM_MOUSEMOVE
+
+4、左键按下时：
+m_ptOrigin = point;
+m_bDraw = true;
+
+5、左键抬起：
+m_bDraw = false;
+
+6、鼠标移动时：
+    //画连续线条
+CClientDC dc(this);
+if(m_bDraw)
+    {
+       dc.MoveTo(m_ptOrigin);
+       dc.LineTo(point);
+       m_ptOrigin = point;
+    }
+    //画扇形线条
+CClientDC dc(this);
+    if(m_bDraw)
+    {
+       dc.MoveTo(m_ptOrigin);
+       dc.LineTo(point);
+    }
+    //画带外包线的扇形线条
+析：画带外包线的扇形线条，不光记录初始位置，还要记录鼠标移动上一位置。
+添加成员变量：
+CPoint m_ptOld;
+在鼠标左键按下时初始化：
+m_ptOld = point；
+在鼠标移动时进行改变：
+CClientDC dc(this);
+    if(m_bDraw)
+    {
+       dc.MoveTo(m_ptOrigin);
+       dc.LineTo(m_ptOld);
+       dc.MoveTo(m_ptOld);
+       dc.LineTo(point);
+       m_ptOld = point;
+    }
+画矩形：
+画无边框的矩形
+方法说明：利用FillRect函数填充矩形。填充内容为画刷的内容，即画刷对象的指针。
+     CBrush brush(RGB(5,255,255));
+     CClientDC dc(this);
+     dc.FillRect(CRect(m_ptOrigin,point),&brush);
+以位图作为画刷的资源
+     CBitmap bitmap;
+     bitmap.LoadBitmap(IDB_BITMAP1); 
+     CBrush brush(&bitmap);
+     CClientDC dc(this);
+     dc.FillRect(CRect(m_ptOrigin,point),&brush);
+画有边框的矩形
+方法说明：利用Rectangle方法来画矩形。其中CBrush与CPen类分别负责矩形内部和矩形边框的属性
+     //画中心为白色的矩形
+     CClientDC dc(this);
+     dc.Rectangle(CRect(m_ptOrigin,point));
+ 
+     //画中心为透明的矩形
+     CClientDC dc(this);
+CBrush *pBrush=CBrush::FromHandle((HBRUSH)
+GetStockObject(NULL_BRUSH));
+     CBrush *pOldBrush=dc.SelectObject(pBrush);
+     dc.Rectangle(CRect(m_ptOrigin,point));
+     pOldBrush=pBrush;
+ 
+//画中心为透明边为任意颜色的矩形
+     CClientDC dc(this);
+     CPen pen(PS_SOLID,1,RGB(234,23,53));
+     CPen *pOldPen=dc.SelectObject(&pen);
+     CBrush *pBrush=CBrush::FromHandle((HBRUSH)
+GetStockObject(NULL_BRUSH))
+     CBrush *pOldBrush=dc.SelectObject(pBrush);
+     dc.Rectangle(CRect(m_ptOrigin,point));
+     dc.SelectObject(pOldPen);
+     dc.SelectObject(pOldBrush);
+ 
+使用画笔、画刷
+在OnLButtonUp函数中：
+/////////////////////////////////////////////////////////////////
+CPen pen(PS_SOLID,1,RGB(234,23,53));
+//定义一个CPen类对象，并利用RGB宏改变其颜色
+CClientDC dc(this);
+CPen *pOldPen=dc.SelectObject(&pen); //将其选入设备表
+dc.MoveTo(m_ptOrigin);
+dc.LineTo(point);
+dc.SelectObject(pOldPen); 
+/////////////////////////////////////////////////////////////////
+CBrush brush(RGB(0,255,0)); 
+CClientDC dc(this); 
+CRect rect(m_ptOrigin,point); 
+dc.FillRect(&rect,&brush); 
+/////////////////////////////////////////////////////////////////
+使用位图创建画刷：
+插入->资源->位图->引入,可以引入位图，初始一般命名为：IDB_BITMAP1
+CBitmap bitmap; 
+bitmap.LoadBitmap(IDB_BITMAP1); 
+CBrush brush(&bitmap); 
+CClientDC dc(this); 
+CRect rect(m_ptOrigin,point); 
+dc.FillRect(&rect,&brush);
+/////////////////////////////////////////////////////////////////
+CBrush *brush; 
+brush = CBrush::FromHandle((HBRUSH)GetStockObject(NULL_BRUSH));
+CClientDC dc(this); 
+CBrush *pOldBrush =dc.SelectObject(brush) ;  
+dc.Rectangle(CRect(m_ptOrigin,point)); 
+dc.SelectObject(pOldBrush) ; 
+注：
+常用的绘图设备类对象的创建和将其引入到设备环境中的方法
+在选择绘图设备类对象（GDI对象）进行绘图时，一般可按下列步骤进行：
+（1）定义一个GDI对象，然后调用相应的函数（如CreatePen、CreateSolidBrush等）创建此GDI对象。
+（2）将已构造出的GDI对象利用设备环境类对象的成员函数SelectObject选入到当前环境中，并同时将原来的GDI对象保存起
+来。
+（3）绘图结束后，恢复当前设备环境中原来的GDI对象。
+注意：在Windows系统中包含了一些库存的GDI对象，在第（3）步中可直接利用设备环境类（CDC）的成员函数
+SelectStockObject将一个Windows库存的GDI对象选入，系统可自动将原来选入的GDI对象从设备环境中分离出来。

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClipScreen", "ClipScreen.vcproj", "{1C8E7FAE-9748-4B86-82C0-BFDF608C86DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallDll", "..\CallDll\CallDll.vcproj", "{943584E9-380C-4475-A905-AABFEF30A330}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C8E7FAE-9748-4B86-82C0-BFDF608C86DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C8E7FAE-9748-4B86-82C0-BFDF608C86DD}.Debug|Win32.Build.0 = Debug|Win32
+		{1C8E7FAE-9748-4B86-82C0-BFDF608C86DD}.Release|Win32.ActiveCfg = Release|Win32
+		{1C8E7FAE-9748-4B86-82C0-BFDF608C86DD}.Release|Win32.Build.0 = Release|Win32
+		{943584E9-380C-4475-A905-AABFEF30A330}.Debug|Win32.ActiveCfg = Debug|Win32
+		{943584E9-380C-4475-A905-AABFEF30A330}.Debug|Win32.Build.0 = Debug|Win32
+		{943584E9-380C-4475-A905-AABFEF30A330}.Release|Win32.ActiveCfg = Release|Win32
+		{943584E9-380C-4475-A905-AABFEF30A330}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
