@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExeScanner", "module\ExeSca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exeinfo", "module\exeinfo\exeinfo.vcxproj", "{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeFile", "module\PeFile\PeFile.vcxproj", "{E97A0AAE-8786-406D-B1D3-5502494C75A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +25,10 @@ Global
 		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Debug|x64.Build.0 = Debug|x64
 		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Release|x64.ActiveCfg = Release|x64
 		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD}.Release|x64.Build.0 = Release|x64
+		{E97A0AAE-8786-406D-B1D3-5502494C75A1}.Debug|x64.ActiveCfg = Debug|x64
+		{E97A0AAE-8786-406D-B1D3-5502494C75A1}.Debug|x64.Build.0 = Debug|x64
+		{E97A0AAE-8786-406D-B1D3-5502494C75A1}.Release|x64.ActiveCfg = Release|x64
+		{E97A0AAE-8786-406D-B1D3-5502494C75A1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6DECE392-31F2-42EC-ACE5-C52238FC7AE6} = {411ACC61-884D-48F0-81FF-BB15873DF86C}
 		{DED4B8C1-82CF-4ADC-A83F-A6054835D3FD} = {411ACC61-884D-48F0-81FF-BB15873DF86C}
+		{E97A0AAE-8786-406D-B1D3-5502494C75A1} = {411ACC61-884D-48F0-81FF-BB15873DF86C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
