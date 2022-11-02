@@ -3,9 +3,54 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_module", "1_module", "{BCB31124-C1C9-4174-8682-1424A996B79E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyPing", "module\ICMP\MyPing\MyPing.vcxproj", "{2F641AB1-08C1-4E31-9A48-486AA6687A2A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyTraceRoute", "module\ICMP\MyTraceRoute\MyTraceRoute.vcxproj", "{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NBTSTAT", "module\NBTSTAT\NBTSTAT.vcxproj", "{3EBE76F7-630E-49B5-B7DF-001AEDE860CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itracert", "module\tracert\itracert\itracert.vcxproj", "{91915A13-C9EA-4B36-925A-1EEFA51B529A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itracert_icmpdll", "module\tracert\itracert_icmpdll\itracert_icmpdll.vcxproj", "{DC13AECF-C1E8-42D7-8527-8BF27D15D530}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F641AB1-08C1-4E31-9A48-486AA6687A2A}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F641AB1-08C1-4E31-9A48-486AA6687A2A}.Debug|x86.Build.0 = Debug|Win32
+		{2F641AB1-08C1-4E31-9A48-486AA6687A2A}.Release|x86.ActiveCfg = Release|Win32
+		{2F641AB1-08C1-4E31-9A48-486AA6687A2A}.Release|x86.Build.0 = Release|Win32
+		{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99}.Debug|x86.ActiveCfg = Debug|Win32
+		{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99}.Debug|x86.Build.0 = Debug|Win32
+		{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99}.Release|x86.ActiveCfg = Release|Win32
+		{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99}.Release|x86.Build.0 = Release|Win32
+		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB}.Debug|x86.Build.0 = Debug|Win32
+		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB}.Release|x86.ActiveCfg = Release|Win32
+		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB}.Release|x86.Build.0 = Release|Win32
+		{91915A13-C9EA-4B36-925A-1EEFA51B529A}.Debug|x86.ActiveCfg = Debug|Win32
+		{91915A13-C9EA-4B36-925A-1EEFA51B529A}.Debug|x86.Build.0 = Debug|Win32
+		{91915A13-C9EA-4B36-925A-1EEFA51B529A}.Release|x86.ActiveCfg = Release|Win32
+		{91915A13-C9EA-4B36-925A-1EEFA51B529A}.Release|x86.Build.0 = Release|Win32
+		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Debug|x86.Build.0 = Debug|Win32
+		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Release|x86.ActiveCfg = Release|Win32
+		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F641AB1-08C1-4E31-9A48-486AA6687A2A} = {BCB31124-C1C9-4174-8682-1424A996B79E}
+		{95CB5463-BFD1-4E55-98D3-F2D46F8CDF99} = {BCB31124-C1C9-4174-8682-1424A996B79E}
+		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB} = {BCB31124-C1C9-4174-8682-1424A996B79E}
+		{91915A13-C9EA-4B36-925A-1EEFA51B529A} = {BCB31124-C1C9-4174-8682-1424A996B79E}
+		{DC13AECF-C1E8-42D7-8527-8BF27D15D530} = {BCB31124-C1C9-4174-8682-1424A996B79E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
