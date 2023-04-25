@@ -112,26 +112,26 @@ void CMFCPlaneGameView::readPlayerState(CDC * pDC)
 	int lineHeight = 30;
 	int left = PLAY_WIDTH;
 	int top = PLAY_HEIGHT/10;
-	pDC->TextOutW(left, top + lineHeight, _T("控制说明："));
-	pDC->TextOutW(left, top + 1 * lineHeight, _T("暂停游戏:P"));
-	pDC->TextOutW(left, top + 2 * lineHeight, _T("继续游戏：C"));
-	pDC->TextOutW(left, top + 3 * lineHeight, _T("向上移动:W/鼠标操作"));
-	pDC->TextOutW(left, top + 4 * lineHeight, _T("向下移动:S/鼠标操作"));
-	pDC->TextOutW(left, top + 5 * lineHeight, _T("向左移动:A/鼠标操作"));
-	pDC->TextOutW(left, top + 6 * lineHeight, _T("向右移动:D/鼠标操作"));
-	pDC->TextOutW(left, top + 7 * lineHeight, _T("普通攻击：自动"));
-	pDC->TextOutW(left, top + 8 * lineHeight, _T("武器1:1"));
-	pDC->TextOutW(left, top + 9 * lineHeight, _T("武器2:2"));
-	pDC->TextOutW(left, top + 10 * lineHeight, _T("武器3:3"));
-	pDC->TextOutW(left, top + 11 * lineHeight, _T("终极武器：B"));
-	pDC->TextOutW(left, top + 12 * lineHeight, _T("当前资源数："));
+	pDC->TextOut(left, top + lineHeight, _T("控制说明："));
+	pDC->TextOut(left, top + 1 * lineHeight, _T("暂停游戏:P"));
+	pDC->TextOut(left, top + 2 * lineHeight, _T("继续游戏：C"));
+	pDC->TextOut(left, top + 3 * lineHeight, _T("向上移动:W/鼠标操作"));
+	pDC->TextOut(left, top + 4 * lineHeight, _T("向下移动:S/鼠标操作"));
+	pDC->TextOut(left, top + 5 * lineHeight, _T("向左移动:A/鼠标操作"));
+	pDC->TextOut(left, top + 6 * lineHeight, _T("向右移动:D/鼠标操作"));
+	pDC->TextOut(left, top + 7 * lineHeight, _T("普通攻击：自动"));
+	pDC->TextOut(left, top + 8 * lineHeight, _T("武器1:1"));
+	pDC->TextOut(left, top + 9 * lineHeight, _T("武器2:2"));
+	pDC->TextOut(left, top + 10 * lineHeight, _T("武器3:3"));
+	pDC->TextOut(left, top + 11 * lineHeight, _T("终极武器：B"));
+	pDC->TextOut(left, top + 12 * lineHeight, _T("当前资源数："));
 	CString str;
 	str.Format(_T("当前得分：%d"), p1.getScore());
-	pDC->TextOutW(left, top + 13 * lineHeight, str);
+	pDC->TextOut(left, top + 13 * lineHeight, str);
 	str.Format(_T("生命值：%d"), p1.getLife());
-	pDC->TextOutW(left, top + 14 * lineHeight, str);
+	pDC->TextOut(left, top + 14 * lineHeight, str);
 	str.Format(_T("终极武器个数：%d"), p1.getBomb());
-	pDC->TextOutW(left, top + 15 * lineHeight, str);
+	pDC->TextOut(left, top + 15 * lineHeight, str);
 }
 
 // CMFCPlaneGameView 绘制
@@ -157,14 +157,14 @@ void CMFCPlaneGameView::OnDraw(CDC* pDC)
 		CFont font;
 		font.CreatePointFont(150, _T("微软雅黑"), pDC);
 		pDC->SelectObject(&font);
-		pDC->TextOutW(left, top, _T("游戏控制方式："));
-		pDC->TextOutW(left, top + 1 * lineHeight,  _T("WSAD控制上下左右"));
-		pDC->TextOutW(left, top + 2 * lineHeight,  _T("子弹自动发射，按B使用终极武器"));
-		pDC->TextOutW(left, top + 4 * lineHeight,  _T("敌人说明:"));
-		pDC->TextOutW(left, top + 5 * lineHeight,  _T("敌人会在屏幕上方随机出现，打中得一分"));
-		pDC->TextOutW(left, top + 6 * lineHeight, _T("随着你得分越高，敌人会出现越来越快"));
-		pDC->TextOutW(left, top + 7 * lineHeight, _T("当你得分达到100时，会出现BOSS"));
-		pDC->TextOutW(left, top + 8 * lineHeight, _T("击败它吧，你会获得无上的荣耀！"));
+		pDC->TextOut(left, top, _T("游戏控制方式："));
+		pDC->TextOut(left, top + 1 * lineHeight,  _T("WSAD控制上下左右"));
+		pDC->TextOut(left, top + 2 * lineHeight,  _T("子弹自动发射，按B使用终极武器"));
+		pDC->TextOut(left, top + 4 * lineHeight,  _T("敌人说明:"));
+		pDC->TextOut(left, top + 5 * lineHeight,  _T("敌人会在屏幕上方随机出现，打中得一分"));
+		pDC->TextOut(left, top + 6 * lineHeight, _T("随着你得分越高，敌人会出现越来越快"));
+		pDC->TextOut(left, top + 7 * lineHeight, _T("当你得分达到100时，会出现BOSS"));
+		pDC->TextOut(left, top + 8 * lineHeight, _T("击败它吧，你会获得无上的荣耀！"));
 		break;
 	}
 	case RUNNING: {
@@ -197,11 +197,11 @@ void CMFCPlaneGameView::OnDraw(CDC* pDC)
 		int lineHeight = 30;
 		int left = GAME_WIDTH / 4;
 		int top = GAME_HEIGHT / 3;
-		pDC->TextOutW(left, top, _T("祝贺你！通关了本游戏"));
-		pDC->TextOutW(left, top + lineHeight, _T("你维护了地球的和平，人类永不忘记！！！"));
+		pDC->TextOut(left, top, _T("祝贺你！通关了本游戏"));
+		pDC->TextOut(left, top + lineHeight, _T("你维护了地球的和平，人类永不忘记！！！"));
 		CString str;
 		str.Format(_T("你的最终得分:%d"), p1.getScore());
-		pDC->TextOutW(left, top + 2 * lineHeight, str);
+		pDC->TextOut(left, top + 2 * lineHeight, str);
 		break;
 	}
 	case BADEND: {
@@ -216,11 +216,11 @@ void CMFCPlaneGameView::OnDraw(CDC* pDC)
 		int lineHeight = 30;
 		int left = GAME_WIDTH / 4;
 		int top = GAME_HEIGHT / 3;
-		pDC->TextOutW(left, top, _T("很遗憾，你的战机被击毁了。。。"));
-		pDC->TextOutW(left, top + lineHeight, _T("你的敌人现在正在很高兴地举行庆功party"));
+		pDC->TextOut(left, top, _T("很遗憾，你的战机被击毁了。。。"));
+		pDC->TextOut(left, top + lineHeight, _T("你的敌人现在正在很高兴地举行庆功party"));
 		CString str;
 		str.Format(_T("你的最终得分:%d"),p1.getScore());
-		pDC->TextOutW(left, top + 2*lineHeight, str);
+		pDC->TextOut(left, top + 2*lineHeight, str);
 		break; 
 	}
 	}
