@@ -55,7 +55,7 @@ BOOL CClientDoc::OnNewDocument()
         }
 
 
-        m_pAddrs = &(STATIC_DOWNCAST(CTelnetApp, AfxGetApp())->m_addrList);
+        m_pAddrs = &(theApp.m_addrList);
         CConnectDlg dlg(m_pAddrs);
         if (dlg.DoModal() == IDOK) {
                 if (m_pAddrs->Find(dlg.m_Address) == 0)
