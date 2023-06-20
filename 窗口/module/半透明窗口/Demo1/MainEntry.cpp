@@ -356,12 +356,13 @@ LRESULT CALLBACK _WndProc(HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam)
 	return hResult;
 }
 
+
 void _ShadowWnd(HWND hWnd)
 {
-	LONG _OldWndProc = GetWindowLongPtr(hWnd, GWL_WNDPROC);
+	LONG _OldWndProc = GetWindowLongPtr(hWnd, GWLP_WNDPROC);
 	if (NULL != _OldWndProc)
 	{
-		SetWindowLongPtr(hWnd, GWL_WNDPROC, (LONG)_WndProc);
+		SetWindowLongPtr(hWnd, GWLP_WNDPROC, (LONG)_WndProc);
 		SetWindowLongPtr(hWnd, GWL_EXSTYLE, GetWindowLongPtr(hWnd, GWL_EXSTYLE)|WS_EX_LAYERED);
 		SetLayeredWindowAttributes(hWnd, 0, 3, LWA_ALPHA);
 	}
