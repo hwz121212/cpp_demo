@@ -110,7 +110,7 @@ int main(int argc, char* argv[])
 	ZeroMemory(&ci,sizeof(CONFIG_INFO));
 	//ÓÊ¼þ·þÎñÆ÷
 	printf("Please enter pop3 Server Name:");
-	gets(ci.m_szServerName);
+	gets_s(ci.m_szServerName);
 //	sprintf(ci.m_szServerName,"pop3.126.com");
 //	sprintf(ci.m_szServerName,"pop3.sohu.com");
 //	sprintf(ci.m_szServerName,"pop3.sina.com.cn");
@@ -152,7 +152,7 @@ int main(int argc, char* argv[])
 //	sprintf(ci.m_szAccount,"USER ntsmtp\r\n");
 	char szTem[PARA_BUF];
 	printf("Enter Email Address: ");
-	gets(szTem);
+	gets_s(szTem);
 	sprintf(ci.m_szAccount,"USER %s\r\n",szTem);
 	send(sconnection,ci.m_szAccount,strlen(ci.m_szAccount),0);
 
@@ -164,7 +164,7 @@ int main(int argc, char* argv[])
 
 //	sprintf(ci.m_szPassword,"PASS nt123456\r\n");
 	printf("Enter Passwd: ");
-	gets(szTem);
+	gets_s(szTem);
 	sprintf(ci.m_szPassword,"PASS %s\r\n",szTem);
 	send(sconnection,ci.m_szPassword,strlen(ci.m_szPassword),0);
 

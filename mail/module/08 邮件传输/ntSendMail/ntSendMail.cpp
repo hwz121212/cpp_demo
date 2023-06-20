@@ -112,7 +112,7 @@ int main(int argc, char* argv[])
 //	sprintf(ci.m_szServerName,"smtp.sohu.com");
 //	sprintf(ci.m_szServerName,"smtp.sina.com.cn");
 	printf("Please enter smtp Server Name:");
-	gets(ci.m_szServerName);
+	gets_s(ci.m_szServerName);
 	//设置SOCKADDR_IN地址结构
 	serAddr.sin_family = AF_INET;
 	serAddr.sin_port = htons(SMTP_PORT);
@@ -169,28 +169,28 @@ int main(int argc, char* argv[])
 	
 	//用户名、密码
 	printf("Enter Account name: ");
-	gets(ci.m_szAccount);
+	gets_s(ci.m_szAccount);
 
 	printf("Enter passwd: ");
-	gets(ci.m_szPassword);
+	gets_s(ci.m_szPassword);
 
 	printf("Enter Sender Email: ");
-	gets(ci.m_szFrom);
+	gets_s(ci.m_szFrom);
 
 	printf("Enter Subject: ");
-	gets(ci.m_szSubject);
+	gets_s(ci.m_szSubject);
 
 	printf("Enter Receiver Email: ");
-	gets(ci.m_szTo);
+	gets_s(ci.m_szTo);
 
 	printf("Enter User name: ");
-	gets(ci.m_szUsername);
+	gets_s(ci.m_szUsername);
 
 	printf("Enter Email Content: ");
-	gets(ci.m_szBody);
+	gets_s(ci.m_szBody);
 
 	printf("Enter Attachment name: ");
-	gets(ci.m_szFilename);
+	gets_s(ci.m_szFilename);
 
 /*	sprintf(ci.m_szAccount,"ntsmtp");
 	sprintf(ci.m_szPassword,"nt123456");
