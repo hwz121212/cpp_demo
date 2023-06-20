@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itracert", "module\tracert\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itracert_icmpdll", "module\tracert\itracert_icmpdll\itracert_icmpdll.vcxproj", "{DC13AECF-C1E8-42D7-8527-8BF27D15D530}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telnet", "module\telnet\Telnet.vcxproj", "{395C34B2-367D-4BE3-AC76-3765FF30D2F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,10 @@ Global
 		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Debug|x64.Build.0 = Debug|x64
 		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Release|x64.ActiveCfg = Release|x64
 		{DC13AECF-C1E8-42D7-8527-8BF27D15D530}.Release|x64.Build.0 = Release|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Debug|x64.ActiveCfg = Debug|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Debug|x64.Build.0 = Debug|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Release|x64.ActiveCfg = Release|x64
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{3EBE76F7-630E-49B5-B7DF-001AEDE860CB} = {BCB31124-C1C9-4174-8682-1424A996B79E}
 		{91915A13-C9EA-4B36-925A-1EEFA51B529A} = {BCB31124-C1C9-4174-8682-1424A996B79E}
 		{DC13AECF-C1E8-42D7-8527-8BF27D15D530} = {BCB31124-C1C9-4174-8682-1424A996B79E}
+		{395C34B2-367D-4BE3-AC76-3765FF30D2F4} = {BCB31124-C1C9-4174-8682-1424A996B79E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
