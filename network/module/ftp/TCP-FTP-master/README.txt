@@ -1,1 +1,0 @@
-To learn some network programming I coded a basic FTP Client and Server
