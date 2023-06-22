@@ -72,7 +72,7 @@ BOOL CSystemTray::Create(UINT uCallbackMessage, LPCTSTR lpszToolTip, HICON hIcon
 /* 作用     : 托盘动作处理											*/
 /*																	*/
 /********************************************************************/
-LRESULT CSystemTray::OnTrayNotification(UINT wParam, LONG lParam) 
+LRESULT CSystemTray::OnTrayNotification(WPARAM wParam, LPARAM lParam)
 {
     // 不是托盘消息直接返回
     if (wParam != m_NotifyIconData.uID)

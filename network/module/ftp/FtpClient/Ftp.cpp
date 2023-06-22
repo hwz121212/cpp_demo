@@ -59,7 +59,7 @@ void Ftp::err_sys(char * fmt,...) {
 
 bool Ftp::file_exists(char * filename){
 	ifstream ifile(filename);
-	return ifile;
+	return ifile.good();
 }
 
 bool Ftp::readFileAndSend(char* filename, int sock){

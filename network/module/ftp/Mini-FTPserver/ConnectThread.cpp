@@ -133,7 +133,7 @@ void CConnectThread::OnDestroyDataConnection(WPARAM wParam, LPARAM lParam)
 /* 作用     : 定时器响应函数										*/
 /*																	*/
 /********************************************************************/
-VOID CALLBACK CConnectThread::TimerProc(HWND hwnd, UINT uMsg, UINT uIDEvent, DWORD dwTime)
+VOID CALLBACK CConnectThread::TimerProc(HWND hwnd, UINT uMsg, UINT_PTR uIDEvent, DWORD dwTime)
 {
 	CConnectThread *pThread = (CConnectThread *)AfxGetThread();
 	

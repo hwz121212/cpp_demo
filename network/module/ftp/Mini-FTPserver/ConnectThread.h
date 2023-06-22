@@ -21,7 +21,8 @@ protected:
 
 // Attributes
 public:
-	static VOID CALLBACK TimerProc(HWND hwnd, UINT uMsg, UINT uIDEvent, DWORD dwTime);
+	static VOID CALLBACK TimerProc(HWND hwnd, UINT uMsg, UINT_PTR uIDEvent, DWORD dwTime);
+
 
 // Operations
 public:
