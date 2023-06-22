@@ -27,28 +27,32 @@ int main (int argc, char **argv)// argcÊı×éÖ¸ÕëµÄ³¤¶È£¬argvÎªÖ¸Ïò×Ö·û´®µÄÊı×éÖ¸Õ
 //argv[6]="match.res "
 
     /* Parse command line arguments.  */
-    while (++arg < argc) {
+    while (++arg < argc) 
+	{
       if (! strcmp(argv[arg], "-keys1") ||
-          ! strcmp(argv[arg], "-k1")) {
+          ! strcmp(argv[arg], "-k1")) 
+	  {
         in1 = fopen(argv[arg+1], "r");
         arg++;
       }
       else if (! strcmp(argv[arg], "-keys2") ||
-            !strcmp(argv[arg], "-k2")) {
+            !strcmp(argv[arg], "-k2"))
+	  {
         in2 = fopen(argv[arg+1], "r");
         arg++;
       }
-      else if (! strcmp(argv[arg], "-out")) {
+      else if (! strcmp(argv[arg], "-out")) 
+	  {
         out = fopen(argv[arg+1], "w");
         arg++;
       }
-      else {
+      else
+	  {
         if (argc>1)
           fprintf(stderr, "Invalid command line argument: %s\n", argv[arg]);
         printusage=2;
       }
     }
-
 
     if (in1 && in2 && printusage==1)
         printusage=0;
