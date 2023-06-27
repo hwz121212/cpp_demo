@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{5DA9E2AD-8792-4CA5-AB95-70AB1B3E2083}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dos2unix", "thirdparty\dos2unix\dos2unix.vcxproj", "{44D525F2-7DAC-4E3A-9A08-AA32DF32749B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44D525F2-7DAC-4E3A-9A08-AA32DF32749B}.Debug|x64.ActiveCfg = Debug|x64
+		{44D525F2-7DAC-4E3A-9A08-AA32DF32749B}.Debug|x64.Build.0 = Debug|x64
+		{44D525F2-7DAC-4E3A-9A08-AA32DF32749B}.Release|x64.ActiveCfg = Release|x64
+		{44D525F2-7DAC-4E3A-9A08-AA32DF32749B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44D525F2-7DAC-4E3A-9A08-AA32DF32749B} = {5DA9E2AD-8792-4CA5-AB95-70AB1B3E2083}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
